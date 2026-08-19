@@ -1,37 +1,49 @@
 {
   "name": "isahecamcom",
-  "private": true,
   "version": "1.0.0",
-  "main": "package.json",
+  "private": true,
+  "keywords": [
+    "sanity"
+  ],
   "license": "UNLICENSED",
+  "main": "package.json",
   "scripts": {
     "build": "sanity build",
     "deploy": "sanity deploy",
     "deploy-graphql": "sanity graphql deploy",
     "dev": "sanity dev",
-    "start": "sanity start"
+    "start": "sanity start",
+    "lint": "oxlint",
+    "lint:fix": "oxlint --fix",
+    "fmt": "oxfmt",
+    "fmt:check": "oxfmt --check",
+    "prepare": "husky"
   },
-  "keywords": [
-    "sanity"
-  ],
   "dependencies": {
-    "@sanity/vision": "^6.9.2",
+    "@portabletext/react": "^8.0.0",
+    "@sanity/vision": "^6.10.1",
     "react": "^19.2.4",
     "react-dom": "^19.2.4",
-    "sanity": "^6.9.2",
+    "sanity": "^6.10.1",
+    "sanity-plugin-internationalized-array": "^5.1.27",
+    "sanity-plugin-singleton-management": "^1.0.7",
     "styled-components": "^6.1.18"
   },
   "devDependencies": {
+    "@commitlint/cli": "^21.2.2",
+    "@commitlint/config-conventional": "^21.2.2",
+    "@commitlint/types": "^21.2.0",
     "@sanity/eslint-config-studio": "^6.0.0",
     "@types/react": "^19.2.14",
     "eslint": "^9.28",
+    "lint-staged": "^17.3.0",
+    "oxfmt": "^0.63.0",
+    "oxlint": "^1.78.0",
     "prettier": "^3.5",
     "typescript": "^5.8"
   },
-  "prettier": {
-    "bracketSpacing": false,
-    "printWidth": 100,
-    "semi": false,
-    "singleQuote": true
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx,mjs,cjs}": "pnpm run lint",
+    "*": "oxfmt --no-error-on-unmatched-pattern"
   }
 }
