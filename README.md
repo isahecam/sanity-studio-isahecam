@@ -4,12 +4,12 @@
 
 <p align="center">
   <a href="https://x.com/isahecam"><img alt="follow" src="https://shieldcn.dev/x/follow/isahecam.svg?variant=outline&amp;size=xs&amp;font=geist" /></a>
-  <a href="https://github.com/isahecam/sanity-studio-isahecam"><img alt="repo views" src="https://shieldcn.dev/views/repo/isahecam/isahecam.com.svg?variant=outline&amp;size=xs&amp;font=geist" /></a>
+  <a href="https://github.com/isahecam/sanity-studio-isahecam"><img alt="repo views" src="https://shieldcn.dev/views/repo/isahecam/isahecam.dev.svg?variant=outline&amp;size=xs&amp;font=geist" /></a>
 </p>
 
 Headless CMS backend for my personal developer portfolio, built with Sanity Studio and TypeScript.
 
-→ Live site: [isahecam.com](https://chanhdai.com)
+→ Live site: [isahecam.dev](https://isahecam.dev)
 
 ## Overview
 
